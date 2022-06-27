@@ -1,0 +1,10 @@
+.page-inner h2 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.page-inner p {
+	margin-bottom: 20px;
+}
+.page-inner p:last-child{
+	margin:0;
+}

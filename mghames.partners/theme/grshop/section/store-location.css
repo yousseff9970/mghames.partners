@@ -1,0 +1,28 @@
+.store-content {
+	margin-left: 20px;
+}
+.single-store {
+	background: #fff;
+	padding: 15px;
+	box-shadow: 0px 0px 15px #0003;
+	display: flex;
+	margin-top: 20px;
+}
+.store-content h3 {
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.store-content ul li {
+	line-height: 30px;
+}
+.store-content ul li i {
+  margin-right: 5px;
+  color: #00ab55;
+  border: 1px solid;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Jost', sans-serif;
+}
+
+/* store loader */
+
+.loader-area {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #483ddc;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin .8s linear infinite; /* Safari */
+  animation: spin .8s linear infinite;
+  margin: auto;
+  }
+  
+  .store-loading h6 {
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+        
+  /* Safari */
+  @-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
+  
+  .store-loading p {
+    font-size: 20px;
+    color: #666;
+  }

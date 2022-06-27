@@ -1,0 +1,127 @@
+/*=============================
+	Hero Area CSS
+===============================*/
+.hero-area {
+	overflow: hidden;
+}
+.hero-slider {
+	position: relative;
+	z-index: 1;
+	height: 500px;
+}
+.hero-area, .hero-area .single-slider {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 500px;
+}
+.hero-area .hero-content {
+	position: relative;
+	padding-top: 80px;
+}
+.hero-area .hero-content h4 {
+	color: #111a3a;
+	font-size: 16px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.hero-area .hero-content h1 {
+	font-size: 50px;
+	color: #111a3a;
+	line-height: 65px;
+	margin-bottom: 20px;
+	font-weight: 800;
+}
+.hero-area .hero-content h1 span {
+	font-weight: 500;
+}
+.hero-area .hero-content p {
+	color: #111a3a;
+	font-size: 17px;
+}
+.hero-area .buttons {
+	margin-top: 15px;
+}
+.hero-area .hero-content .hero-btn {
+	margin-top: 50px;
+}
+.hero-slider .owl-controls .owl-nav div {
+	position: absolute;
+	top: 50%;
+	margin-top: -19px;
+	margin: 0;
+	width: 40px;
+	height: 50px;
+	line-height: 40px;
+	font-size: 22px;
+	background: #111a3a82;
+	color: #fff;
+	font-weight: 700;
+	margin-right: 10px;
+	transition: all 0.4s ease;
+	border-radius: 0px;
+	margin: -25px 0 0 0;
+}
+.hero-slider .owl-controls .owl-nav div:hover{
+	background:#00ab55;
+	color:#fff;
+}
+.hero-slider .owl-controls .owl-nav div.owl-prev {
+	left: 0;
+}
+.hero-slider .owl-controls .owl-nav div.owl-next {
+	right: 0;
+}
+
+/* Slider Animation */
+.hero-slider .owl-item.active .slider-title{
+    animation: fadeInUp	1s both 0.6s;
+}
+.hero-slider .owl-item.active .hero-content p {
+    animation: fadeInUp 1s both 1s;
+}
+.hero-slider .owl-item.active .buttons{
+    animation: fadeInUp 1s both 1.5s;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.hero-area .hero-content h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+}/* Mobile Screen */
+@media only screen and (max-width:767px) {
+.hero-area,.hero-slider, .hero-area .single-slider {
+	height: 350px;
+}
+.hero-area .hero-content h1 {
+	font-size: 28px;
+	line-height: 40px;
+}
+.hero-area .hero-content p {
+	color: #111a3a;
+	font-size: 15px;
+}
+.hero-area .hero-content {
+	padding-top: 30px;
+}
+.hero-slider .owl-controls .owl-nav div.owl-prev {
+	left: -50px;
+}
+.hero-slider:hover .owl-controls .owl-nav div.owl-prev {
+	left: 0px;
+}
+.hero-slider .owl-controls .owl-nav div.owl-next {
+	right: -50px;
+}
+.hero-slider:hover .owl-controls .owl-nav div.owl-next {
+	right: 0px;
+}
+}
+
+
+/*=============================
+	End Hero Area CSS
+===============================*/

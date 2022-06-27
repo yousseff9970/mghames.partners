@@ -1,0 +1,39 @@
+.pt-100 {
+    padding-top: 100px;
+}
+
+.f-right {
+    float: right;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pt-150 {
+    padding-top: 150px;
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mb-150 {
+    margin-bottom: 150px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}

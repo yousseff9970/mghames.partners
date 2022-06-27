@@ -1,0 +1,211 @@
+/*=============================
+	Departments
+===============================*/
+.section-title.s-white-title  .s-content-title {
+	color: #fff;
+  }
+  .single-department {
+	  background: #fff;
+	  z-index: 111a3a3;
+	  position: relative;
+  }
+  .depart-button {
+	  padding: 20px 0 0;
+  }
+  .depart-button a {
+	  color: #111a3a;
+	  border: 1px solid;
+	  padding: 8px 15px;
+	  display: inline-block;
+	  border-radius: 50px;
+	  font-size: 14px;
+	  border: 1px solid #ccccccb5;
+	  background: #f5f5f5;
+  }
+  .depart-button a:hover{
+	  background:#00ab55;
+	  color:#fff;
+	  border-color:transparent;
+  }
+  .dcat-name {
+	  position: absolute;
+	  top: 5px;
+	  background: #00ab55;
+	  color: #fff;
+	  padding: 5px 15px;
+	  font-weight: 700;
+	  border-radius: 30px;
+	  left: 5px;
+	  opacity: 0;
+	  visibility: hidden;
+	  z-index: 111a3a;
+  }
+  .single-department:hover .dcat-name{
+	  opacity:1;
+	  visibility:visible;
+  }
+  .department-img {
+	  position: relative;
+	  overflow: hidden;
+  }
+  .department-img:hover img {
+	  transform: scale(1.2);
+  }
+  .depart-content h2 {
+	font-size: 20px;
+  }
+  .depart-content {
+	padding: 20px;
+	padding-bottom: 35px;
+  }
+  .department-slider {
+	  margin-top: 20px;
+  }
+  .dcat-slider .owl-nav {
+	margin-top: 30px;
+  }
+  .dcat-slider.owl-carousel .owl-nav div {
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	border-radius: 100%;
+	background: transparent;
+	border: 1px solid #00ab55;
+	color: #00ab55;
+	font-size: 20px;
+  }
+  .dcat-slider.owl-carousel .owl-nav div:hover{
+	border-color:transparent;
+	background: #00ab55;
+	color:#fff; 
+  }
+  /* Latest Product Slider*/
+  .department-slider .owl-controls .owl-nav div {
+	  width: 50px;
+	  height: 50px;
+	  line-height: 40px;
+	  font-size: 22px;
+	  background: #fff;
+	  color: #111a3a;
+	  font-weight: 700;
+	  border: 1px solid #cccccc75;
+	  transition: all 0.4s ease;
+	  position: absolute;
+	  top: 50%;
+	  margin: -25px 0 0;
+	  border-radius: 100%;
+  }
+  .department-slider .owl-controls .owl-nav div:hover{
+	  background:#00ab55;
+	  color:#fff;
+  }
+  .department-slider .owl-controls .owl-nav div.owl-prev {
+	  left: -80px;
+  }
+  .department-slider .owl-controls .owl-nav div.owl-next {
+	  right: -80px;
+  }
+  @media only screen and (max-width:767px) {
+  .depart-content {
+	  padding: 12px;
+  }
+  .depart-content h2 {
+	  line-height: initial;
+	  margin-bottom: 5px;
+  }
+  .depart-content p {
+	  font-size: 14px;
+	  line-height: 20px;
+  }
+  .depart-button {
+	  padding: 10px 0 0;
+  }
+  .depart-button a {
+	  padding: 5px 12px;
+	  font-size: 13px;
+  }
+  .departments {
+  }
+  div.latest-home-tabs #list-tab li a {
+	  padding: 10px 15px;
+	  font-size: 14px;
+  }
+  
+  .department-slider .owl-controls .owl-nav div {
+	  opacity: 0;
+	  visibility: hidden;
+	  width: 40px;
+	  height: 40px;
+	  line-height: 40px;
+	  padding: 0;
+	  margin-top: -20px;
+  }
+  .department-slider:hover .owl-controls .owl-nav div{
+	  opacity:1;
+	  visibility:visible;
+  }
+  .department-slider .owl-controls .owl-nav div.owl-prev {
+	  left: -10px;
+  }
+  .department-slider .owl-controls .owl-nav div.owl-next{
+	  right: -10px;
+  }
+  }
+
+  .single-department {
+    border-radius: 15px;
+}
+
+.depart-content p {
+    font-size: 15px;
+    color: #666;
+}
+
+.depart-content {
+    text-align: center;
+}
+
+.department-img img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* category featured */
+.category-area {
+    margin: 150px 0;
+}
+
+.category-header h2 {
+    font-size: 35px;
+}
+
+.category-header {
+    margin-bottom: 30px;
+}
+
+.single-category {
+    background: #ECFFEC;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+
+.category-img img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.category-name h4 {
+    font-size: 22px;
+}
+
+.category-name p {
+    color: #666;
+    font-size: 15px;
+}
+
+  /*=============================
+	  End Departments
+  ===============================*/

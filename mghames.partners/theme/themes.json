@@ -1,0 +1,19 @@
+[
+	
+	{
+		"name":"Resto",
+		"view_path":"theme/resto",
+		"asset_path":"theme/resto"
+	},
+	{
+		"name":"GrShop",
+		"view_path":"theme/grshop",
+		"asset_path":"theme/grshop"
+	},
+	{
+		"name":"Grocery",
+		"view_path":"theme/grocery",
+		"asset_path":"theme/grocery"
+	}
+]
+

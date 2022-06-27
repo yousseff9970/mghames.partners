@@ -1,0 +1,138 @@
+
+.product-add-input-section {
+    position: relative;
+  }
+  
+  .product-search-input input {padding: 0 50px;}
+  
+  .product-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+  }
+  
+  .product-search-input input {
+  padding: 0 55px !important;
+  height: 56px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  }
+  
+  .dlj-middle{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .product-search-area {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    border-bottom: 10px;
+    box-shadow: 0 10px 20px #ddd;
+    z-index: 999;
+  }
+  
+  
+  
+  .product-name h3 {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  
+  .single-product-search {
+    padding: 20px 25px;
+    border-bottom: 1px solid #f3f1f1;
+    cursor: pointer;
+  }
+  
+  
+  .single-barcode {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  }
+  
+  .product-name h5 {
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0;
+  }
+  
+  .product-name p {
+  margin-bottom: 0;
+  font-size: 15px;
+  }
+  
+  
+  
+  .barcode-qrcode img {
+  height: 30px;
+  object-fit: cover;
+  }
+  
+  .barcode-content.barcode_style3 {
+  display: flex;
+  align-items: center;
+  }
+  
+  .barcode-content.barcode_style3 .product-name {
+  width: 50%;
+  }
+  
+  .barcode-content.barcode_style3 .barcode-qrcode {
+  width: 50%;
+  }
+  
+  .barcode-content.barcode_style3 .product-name h5 {
+  font-size: 14px;
+  }
+  
+  .single-barcode.barcode-style5 {
+  display: block;
+  }
+  
+  .single-barcode.barcode-style5 .barcode-img img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  }
+  
+  .single-barcode.barcode-style5 .barcode-qrcode img {
+  width: 100px;
+  }
+  
+  .single-barcode.barcode-style5 .product-name h5 {
+  font-size: 16px;
+  }
+  
+  .single-barcode.barcode-style5 .product-name p {
+  font-size: 10px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}

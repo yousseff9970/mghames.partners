@@ -1,0 +1,107 @@
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.content-placeholder {
+  display: inline-block;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+  background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  -webkit-background-size: 800px 104px;
+  background-size: 800px 104px;
+  height: inherit;
+  position: relative;
+}
+
+.ads_preload{
+  height: 200px;
+  width: 100%;
+}
+
+.none{
+  display: none;
+}
+
+.h-150{
+  height: 150px !important;
+}
+
+         /*# sourceMappingURL=main.css.map */
+.whatsapp {
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+@media (max-width: 576px)
+.whatsapp-btn {
+    width: 40px;
+    height: 40px;
+}
+.whatsapp-btn {
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+   
+}
+
+@media (max-width: 576px){
+  .whatsapp {
+   margin-bottom: 40px;
+   }
+}
+ 
+
+
+@media (max-width: 576px){
+  #whatsapp-icon {
+    fill: #ffffff;
+  }
+}
+
+@media (max-width: 576px)
+#whatsapp-icon, #a2c-icon {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2px;
+}
+@media (max-width: 576px)
+.whatsapp-btn svg {
+    width: 22px;
+    height: 22px;
+}
+.whatsapp-btn svg {
+    fill: #fff;
+    width: 28px;
+    height: 28px;
+}

@@ -1,0 +1,144 @@
+.invoice-area {
+    background: antiquewhite;
+}
+
+.invoice-main-area {
+    background: #fff;
+    padding: 45px 45px;
+}
+
+.invoice-bill-form h5 strong {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.invoice-bill-form h5 {
+    margin-bottom: 5px;
+}
+
+.store-name h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.store-name p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.store-email p {
+    margin-bottom: 0;
+}
+
+.shopify-logo img {
+    height: 100px;
+}
+
+.shopify-logo {
+    float: right;
+}
+
+.invoice-bill-form-main {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.invoice-table-area table tr th {
+    background: #ddd;
+}
+
+.invoice-table-area table tr {
+    font-size: 14px;
+}
+
+.invoice-bill-to {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.invoice-item-area table thead tr th {
+    background: #ddd;
+}
+
+.invoice-item-area table {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.invoice-item-area {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.note-section h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.note-section p {
+    font-size: 15px;
+    color: #666;
+}
+
+.invoice-note-area {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.invoice-footer-content img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.invoice-footer-content p {
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* *Tablet desktop :768px.* */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .invoice-bill-to .col-lg-6 {
+        width: 50%;
+    }
+    .invoice-note-area .col-lg-6 {
+        width: 50%;
+    }
+    .invoice-bill-form-main .col-lg-6 {
+        width: 50%;
+    }
+}
+
+
+/* *small mobile :320px.* */
+
+@media (min-width: 499px) and (max-width: 767px) {
+    .invoice-bill-to .col-lg-6 {
+        width: 50%;
+    }
+    .invoice-note-area .col-lg-6 {
+        width: 50%;
+    }
+    .invoice-bill-form-main .col-lg-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 500px) {
+    .invoice-bill-to .col-lg-6 {
+        width: 50%;
+    }
+    .invoice-note-area .col-lg-6 {
+        width: 50%;
+    }
+    .invoice-bill-form-main .col-lg-6 {
+        width: 50%;
+    }
+}
