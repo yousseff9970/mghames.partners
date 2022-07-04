@@ -18,7 +18,11 @@ class DashboardController extends Controller
     public function index()
     {
         $orders = Order::where([['user_id', Auth::id()],['price','>',0]])->with('plan','orderlog')->latest()->take(5)->get();
-        return view('merchant.dashboard',compact('orders'));
+        $posts=Tenant::where('user_id',Auth::id())->with('orderwithplan')->latest()->take(10)->get();
+    	
+        $file=file_get_contents('theme/themes.json');
+        $themes = json_decode($file);
+        return view('merchant.dashboard',compact('orders'))->with('posts', $posts);
     }
 
     public function staticData()

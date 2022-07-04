@@ -1,0 +1,14 @@
+Updated Files[
+
+
+frontend(
+resources/views/merchant/domain/create.blade.php
+),
+
+backend(
+database/seeders/tenant/TenantTermSeeder.php,
+app/http/controllers/merchant/PlanController.php,
+app/http/controllers/merchant/Domaincontroller.php
+)
+
+]

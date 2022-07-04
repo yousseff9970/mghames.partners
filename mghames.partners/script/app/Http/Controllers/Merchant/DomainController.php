@@ -27,7 +27,7 @@ class DomainController extends Controller
     public function index()
     {
     	$posts=Tenant::where('user_id',Auth::id())->with('orderwithplan')->latest()->paginate(50);
-      abort_if(!getpermission('website_settings'),401);
+    	
         $file=file_get_contents('theme/themes.json');
         $themes = json_decode($file);
 
@@ -90,7 +90,7 @@ class DomainController extends Controller
 
 
         Session::put('store_data',$data);
-        ddd($data);
+        
 
       return response()->json('Great! Now you need to select a plan.');
 

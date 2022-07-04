@@ -83,15 +83,6 @@
 												<a class="dropdown-item has-icon" href="{{ route('merchant.domain.renew',$row->id) }}"><i class="fas fa-wrench"></i> {{ __('Renew Subscription') }}</a>
 												<a class="dropdown-item has-icon" href="{{ route('merchant.domain.plan',$row->id) }}"><i class="fas fa-sync"></i>{{ __('Change Subscription') }}</a>
 												<a class="dropdown-item has-icon" href="{{ route('merchant.domain.developer',$row->id) }}"><i class="fas fa-cog"></i> {{ __('Developer Settings') }}</a>
-												@foreach ($themes as $item)
-												
-													
-														 
-														
-															<a class="dropdown-item has-icon" href="{{ route('seller.theme.install',$item->name) }}" >{{ __('Install') }}</a>
-													
-												
-												@endforeach
 												<a class="dropdown-item has-icon login-confirm" data-id="{{ $row->id }}" href="#"><i class="fas fa-key"></i> {{ __('Login') }}</a>
 												<form class="d-none" id="login_form_{{ $row->id }}" action="{{ route('merchant.domain.login', $row->id) }}" method="POST">
 													@csrf

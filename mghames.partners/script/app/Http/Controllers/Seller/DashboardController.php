@@ -9,7 +9,6 @@ use Carbon\Carbon;
 use App\Models\Order;
 use App\Models\Term;
 use App\Models\Category;
-use App\Models\Tenant;
 use App\Models\User;
 use Auth;
 class DashboardController extends Controller
@@ -61,7 +60,7 @@ class DashboardController extends Controller
         $year=Carbon::parse(date('Y'))->year;
         
 
-        $total_orders=Tenant::where('db','pizza')->first();
+        $total_orders=Order::whereMonth('created_at', '=',$month)->whereYear('created_at', '=',$year)->count();
         $total_pending=Order::whereMonth('created_at', '=',$month)->whereYear('created_at', '=',$year)->where('status_id',3)->count();
         $total_completed=Order::whereMonth('created_at', '=',$month)->whereYear('created_at', '=',$year)->where('status_id',1)->count();
         $total_processing=Order::whereMonth('created_at', '=',$month)->whereYear('created_at', '=',$year)->where([['status_id','!=',1],['status_id','!=',2]])->count();

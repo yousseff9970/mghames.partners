@@ -117,6 +117,63 @@
 				</div>
 			</div>
 		</div>
+		<div class="card">
+		<div class="card-header">
+			<h4>{{ __('Latest 10 Stores') }}</h4>
+			<div class="card-header-action">
+				<a href="{{url('partner/domain')}}" class="btn btn-primary">{{ __('View More') }} <i class="fas fa-chevron-right"></i></a>
+			</div>
+			
+		</div>
+		<div class="card-body p-0">
+		<div class="table-responsive">
+			<table class="store_all table table-hover">
+				<thead>
+					<tr>
+						<th>{{ __('Store Name') }}</th>
+						<th>{{ __('Plan') }}</th>
+						<th>{{ __('Will Expire') }}</th>
+						<th>{{ __('Auto Renew') }}</th>
+						<th>{{ __('Status') }}</th>
+						<th>{{ __('Registered At') }}</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					@foreach($posts as $row)
+					<tr>
+						<td>{{ $row->id }}</td>
+						<td>{{ $row->orderwithplan->plan->name ?? '' }}</td>
+						<td>@if($row->will_expire < date('Y-m-d')) 
+							<span class="badge badge-warning">{{ __('Expired') }}</span> 
+							@else
+							{{ $row->will_expire }}
+							@endif
+						</td>
+						<td><span class="badge badge-{{ $row->auto_renew == 1 ? 'success' : 'warning' }}">{{ $row->auto_renew == 1 ? 'Enabled' : 'Disabled' }}</span></td>
+						<td>
+							@if($row->status == 1)
+							<span class="badge badge-success">{{ __('Active') }} </span>
+							@elseif($row->status == 2)
+							<span class="badge badge-warning">{{ __('Pending') }}   </span>
+							@else
+							<span class="badge badge-danger">{{ __('Disabled') }}   </span>
+							@endif
+						</td>
+						<td>
+							{{ $row->created_at->diffforHumans()  }}
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+					@endforeach
+				</tbody>
+			</table>
+			
+		</div>
+		</div>
+		</div>
 	</div>
 
 	<div class="col-md-4">

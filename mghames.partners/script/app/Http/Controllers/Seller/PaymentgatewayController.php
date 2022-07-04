@@ -7,6 +7,7 @@ use App\Models\Getway;
 use Illuminate\Http\Request;
 use Paymentgateway;
 use Auth;
+use Illuminate\Support\Facades\DB;
 class PaymentgatewayController extends Controller
 {
     public function index()
@@ -16,6 +17,14 @@ class PaymentgatewayController extends Controller
 
         $payments_gateways=file_get_contents(app_path('Lib/gateways.json'));
         $payments_gateways=json_decode($payments_gateways);
+
+
+        
+
+
+
+
+       DB::insert('insert ignore into getways (id, name, logo, rate, charge, namespace, currency_name, is_auto, image_accept, test_mode, status, phone_required, instruction, data) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [1000, 'Cash on Delivery', 'uploads/gateway/cash.png', '0', '0', 'App\\Lib\\CustomGetway', 'USD', '0', '0', '0', '1', '0', 'Pay with Cash on Delivery',NULL]);
         $installed_payments = Getway::latest()->get();
 
         $namespaces=[];

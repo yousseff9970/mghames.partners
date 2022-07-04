@@ -78,19 +78,19 @@
                                     <input name="password_confirmation" type="password" class="form-control">
                                 </div>
                             </div>
-                            <div class="form-group  mb-0">
+                            <div class="form-group  mb-4">
                                 <label>{{ __('DataBase') }}</label>
                                 <div class="">
                                     <select name="db[]"   class="form-control selectric">
                                         <option value="pizza" >pizza</option>
-                                        <option value="burger" >pizza</option>
+                                        <option value="burger" >burger</option>
                                         
                                         
                                        
                                      </select>
                                     
                                 </div>
-                            </div>
+                                <br>
                         </div>
                     </div>
                 </div>
